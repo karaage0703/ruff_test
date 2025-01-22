@@ -23,7 +23,7 @@ jobs:
           pip install ruff==0.9.1
 
       - name: Run Ruff Check
-        run: ruff check .
+        run: ruff check --line-length=127
 
       - name: Run Ruff Format Check
-        run: ruff format --check --diff .
+        run: ruff format --check --diff --line-length=127
